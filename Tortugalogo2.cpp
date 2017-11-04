@@ -67,7 +67,7 @@ int main () {
 
         case 7:
             cout<<"La tortuga esta mirando al:"<<direccion<<endl;
-            cout<<endl;
+             cout<<endl;
         case 8:
             cout<<"Mostrar coordenadas X:"<<coordenadax<<" Y:"<<coordenaday<<endl;
             cout<<endl;
@@ -114,15 +114,15 @@ void avanzar(int tablero[][20], int rt, int&dir, bool&pluma, int avance, int&x, 
                 else
                     tablero[x][y]=0;
 
-            if(x > 0)
-					x--;
-				i++;
-        }
-        if(x == 0)
-				cout << ">> Has llegado al limite!"<<endl;
+            		if(x > 0)
+										x--;
+								i++;
+        		}
+        		if(x == 0)
+								cout << ">> Has llegado al limite!"<<endl;
 
-			break;
-		}
+					break;
+				}
 
 
     case 2://Para que la tortuga avance hacia el Este
@@ -133,8 +133,8 @@ void avanzar(int tablero[][20], int rt, int&dir, bool&pluma, int avance, int&x, 
                 if(pluma==true)
                     tablero[x][y]=1;
                 else
-                    tablero[x][y]=0;
-
+	                    tablero[x][y]=0;
+	
             if(y<19)
                 y++;
             i++;
@@ -166,22 +166,22 @@ void avanzar(int tablero[][20], int rt, int&dir, bool&pluma, int avance, int&x, 
     case 4://hacia el Oeste
         {
             int i = 0;
-			while(i <= avance)
+						while(i <= avance)
             {
-				if(pluma == 1)
-					tablero[x][y] = 1;
-				else
-					tablero[x][y] = 0;
+								if(pluma == 1)
+									tablero[x][y] = 1;
+								else
+									tablero[x][y] = 0;
 
-				if(y > 0)
-					y--;
-				i++;
-			}
-            if(y == 0)
-				cout << ">> Has llegado al limite!"<<endl;
-			break;
-		}
-    }
+						if(y > 0)
+									y--;
+						i++;
+						}
+        		if(y == 0)
+								cout << ">> Has llegado al limite!"<<endl;
+							break;
+						}
+    		}
 }
 
 void mostrartablero(int tablero[][20], int rt)
